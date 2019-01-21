@@ -4,11 +4,12 @@
   Title: <%= f.text_field :title %>
  <h2> adds ingredients </h2>
   <%= f.fields_for :ingredients do |ingredient_builder| %>
-    <%= ingredient_builder.label_0 :name %>
-    <%= ingredient_builder.text_field_0 :name %> <br>
-    <%= ingredient_builder.label_1 :name %>
-    <%= ingredient_builder.text_field_1 :quantity %> <br>
+    <%= ingredient_builder.label :attribute_0_name %1
+    <%= ingredient_builder.text_field :attribute_0_name %> <br>
+    <%= ingredient_builder.label :attribute_1_name %>
+    <%= ingredient_builder.text_field :attribute_1_quantity %> <br>
   <% end %>
 
     <%=f.submit "commit" %>
 <% end %>
+ 
