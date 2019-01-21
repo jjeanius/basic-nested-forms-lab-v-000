@@ -12,7 +12,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new
     @recipe.ingredients.build(:quantity=> "quantity")
     @recipe.ingredients.build(:name=> "name")
-
+redirect_to recipe_path
   end
 
   def create
