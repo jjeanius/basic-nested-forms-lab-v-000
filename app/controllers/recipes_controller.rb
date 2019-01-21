@@ -14,7 +14,7 @@ class RecipesController < ApplicationController
     @recipe.ingredients.build(:name=> "name")
   end
 
-  def creates
+  def create
     @recipe = Recipe.create(receipe_params)
     redirect_to @recipe
   end
