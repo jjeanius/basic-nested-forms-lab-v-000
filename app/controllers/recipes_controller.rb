@@ -10,8 +10,8 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
-    @recipe.ingredients.build(:quantity=> "quantity")
-    @recipe.ingredients.build(:name=> "name")
+    @recipe.ingredient.build(:quantity=> "quantity")
+    @recipe.ingredient.build(:name=> "name")
 
   end
 
